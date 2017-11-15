@@ -14,7 +14,9 @@ public class ThreadService {
     private static Logger logger = LoggerFactory.getLogger(ThreadService.class);
 
     private static int THREAD_NUM;
-    
+    static {
+		THREAD_NUM = 5;
+	}
     public static void main(String[] args) {
         
         String taskNum = "";
